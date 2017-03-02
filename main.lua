@@ -92,10 +92,10 @@ physics.addBody(floor, "static", { bounce = 0.0, friction = 2.0 })
 -- ustawienie kierunku poruszania sie balonow
 function moveBallon(event)
 	local ballon = event.target
-	ballon:applyLinearImpulse( 0, -0.1, event.x, event.y )
-	--ballon:removeSelf()
-	--ballon = nil
---	ballon.dyingTime = 0
+	--ballon:applyLinearImpulse( 0, -0.1, event.x, event.y )
+	ballon:removeSelf()
+	ballon = nil
+	--ballon.dyingTime = 0
 end
 	
 --function pieprzniecieWSciane(event)
